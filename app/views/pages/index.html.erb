@@ -1,0 +1,29 @@
+<h1>Sudoku Solver</h1>
+
+<%= form_tag('/solve', class: 'form-horizontal') do %>
+  <fieldset>
+    <div class="control-group">
+      <%= label_tag(:board, 'Your Sudoku Board', class: 'control-label') %>
+      <div class="controls">
+        <textarea class="input-block-level" id="board" name="board" rows="16">
+8 ? ? ? ? ? ? ? ?
+? ? 3 6 ? ? ? ? ?
+? 7 ? ? 9 ? 2 ? ?
+? 5 ? ? ? 7 ? ? ?
+? ? ? ? 4 5 7 ? ?
+? ? ? 1 ? ? ? 3 ?
+? ? 1 ? ? ? ? 6 8
+? ? 8 5 ? ? ? 1 ?
+? 9 ? ? ? ? 4 ? ?
+        </textarea>
+        <p class="muted"><small><em>Type in your sudoku board, with columns separated by spaces and rows on separate lines. Use ? for elements you don&#x27;t know.</em></small></p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="controls">
+        <%= submit_tag('Solve!', class: 'btn btn-success') %>
+      </div>
+    </div>
+  </fieldset>
+<% end %>

@@ -1,0 +1,17 @@
+<h1>Sudoku Solution</h1>
+
+<div class="row-fluid">
+  <div class="span6">
+    <h2>Your Puzzle</h2>
+    <textarea class="input-block-level" rows="<%= @puzzle.split("\n").size %>"><%= @puzzle %></textarea>
+  </div>
+
+  <div class="span6">
+    <h2>The Solution</h2>
+    <textarea class="input-block-level" rows="<%= @puzzle.split("\n").size %>"><%= @solution %></textarea>
+  </div>
+</div>
+
+<p>Generated this solution in <%= @performance %> ms, including Ruby overhead.</p>
+
+<%= link_to "Solve another puzzle!", :root, class: 'btn btn-primary' %>
