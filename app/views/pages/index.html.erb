@@ -3,7 +3,7 @@
 <%= form_tag('/solve', class: 'form-horizontal') do %>
   <fieldset>
     <div class="control-group">
-      <%= label_tag(:board, 'Your Sudoku Board', class: 'control-label') %>
+      <%= label_tag(:board, 'Your Sudoku Puzzle', class: 'control-label') %>
       <div class="controls">
         <textarea class="input-block-level" id="board" name="board" rows="16">
 8 ? ? ? ? ? ? ? ?
@@ -16,7 +16,7 @@
 ? ? 8 5 ? ? ? 1 ?
 ? 9 ? ? ? ? 4 ? ?
         </textarea>
-        <p class="muted"><small><em>Type in your sudoku board, with columns separated by spaces and rows on separate lines. Use ? for elements you don&#x27;t know.</em></small></p>
+        <p class="muted"><small><em>Type in your Sudoku puzzle, with columns separated by spaces and rows on separate lines. Use ? for elements you don&#x27;t know.</em></small></p>
       </div>
     </div>
 
