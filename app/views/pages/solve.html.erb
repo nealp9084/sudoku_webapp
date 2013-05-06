@@ -16,6 +16,12 @@
   </div>
 </div>
 
-<p>Generated this solution in <%= @performance %> ms, including Ruby overhead.</p>
+<div class="row-fluid">
+  <div class="span6">
+    <%= link_to "Solve another puzzle!", :root, class: 'btn btn-primary' %>
+  </div>
 
-<%= link_to "Solve another puzzle!", :root, class: 'btn btn-primary' %>
+  <div class="span6">
+    <p class="muted"><small><em>Generated this solution in <%= @performance %> ms, including Ruby overhead.</em></small></p>
+  </div>
+</div>
